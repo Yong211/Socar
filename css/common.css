@@ -1,0 +1,388 @@
+@charset "utf-8";
+/* CSS Document */
+/*쏘카 헤더*/
+header{
+         width: 100%; height: 969px; 
+         max-width: 100%; max-height: 100%;
+         background: white;
+         z-index: 1000;
+      }
+      
+      header.scrollDown { 
+         transform: translate(0, -60px);
+         scroll-behavior: smooth;
+      }
+      
+      header .scrollUp{
+         background: white;
+      }
+      
+      header.drop {
+           position: fixed;
+           animation: dropHeader 0.3s;
+         }
+      
+      @keyframes headerscrollDown {
+           0% {background: white;}
+           100% {background: white;}
+         }
+      
+      header .container{
+         width: 100%; height: 60px;
+      }
+      
+      header .container .navbar{
+         position: fixed; top: 0;
+         width: 100%; height: 60px;
+         z-index: 5;
+         transition: top 0.4s;
+         
+      }
+      
+      header .container .navbar .toplogo{
+         position: absolute; top: 30%; margin-left: 40px; 
+         z-index: 3;
+      }
+      header .container .navbar .toplogo a{
+         
+      }
+      
+      header .container .navbar .hamburg{
+         position: absolute; right: 0%; top: 8px;
+         width: 36px; height: 36px; 
+         margin-right: 40px;
+         z-index: 10;
+      }
+      header .container .navbar .hamburg a{
+         position: absolute; right: 0%; top: 8px;
+         width: 36px; height: 36px; 
+         margin-right: 40px;
+         z-index: 10;
+      }
+      header .container .navbar .hamburg a span{
+         display: inline-block; width: 26px; height: 3px; 
+         background: white; z-index: 3;
+         transition: 0.2s;
+      }
+      header .container .navbar .hamburg a span:nth-child(1){
+         position: absolute; right: 12px; top: 4px;
+      }
+      header .container .navbar .hamburg a span:nth-child(2){
+         position: absolute; right: 2px; top: 15px;
+      }
+      header .container .navbar .hamburg:hover a span:nth-child(1){
+         transform: translate(10px, -4px) rotate(45deg); 
+         transform-origin: left;
+         background: #00B8FF;
+      }                                                                                                            
+      header .container .navbar .hamburg:hover a span:nth-child(2){
+         transform: translate(0px, 4px) rotate(-45deg); 
+         transform-origin: left;
+         background: #00B8FF;
+      }
+      
+      /*dddddddddddddddddddddddddddddd*/
+      
+      header .container2{
+         
+      }
+      header .container2 .navbar2{
+         position: fixed; top: 0;
+         width: 100%; height: 60px; border-bottom: 0.7px solid rgba(194,194,194,1.00);
+         z-index: 5;
+         transition: top 0.6s;
+         background: rgba(255, 255, 255, 0.8);
+      }
+      header .container2 .navbar2 .toplogo2{
+         position: absolute; top: 30%; margin-left: 40px; 
+         z-index: 3;
+      }
+      header .container2 .navbar2 .hamburg2{
+         position: absolute; right: 0%; top: 8px;
+         width: 36px; height: 36px; 
+         margin-right: 40px;
+         z-index: 10;
+      }
+      header .container2 .navbar2 .hamburg2 a{
+         position: absolute; right: 0%; top: 8px;
+         width: 36px; height: 36px; 
+         margin-right: 40px;
+         z-index: 10;
+      }
+      header .container2 .navbar2 .hamburg2 a span{
+         display: inline-block; width: 26px; height: 3px; 
+         background: #00B8FF; z-index: 3;
+         transition: 0.2s;
+      }
+      
+      header .container2 .navbar2 .hamburg2 a span:nth-of-type(1){
+         position: absolute; right: 12px; top: 4px;
+      }
+      header .container2 .navbar2 .hamburg2 a span:nth-of-type(2){
+         position: absolute; right: 2px; top: 15px;
+      }
+      header .container2 .navbar2 .hamburg2:hover a span:nth-of-type(1){
+         transform: translate(10px, -4px) rotate(45deg); 
+         transform-origin: left;
+         background: #00B8FF;
+      }                                                                                                            
+      header .container2 .navbar2 .hamburg2:hover a span:nth-of-type(2){
+         transform: translate(0px, 4px) rotate(-45deg); 
+         transform-origin: left;
+         background: #00B8FF;
+      }
+      
+      
+      /*dddddddddddddddddddddddddddddd*/
+      
+      .centersocar{
+         position: absolute; right: 50%; top: 50%; 
+         transform: translate(215px,-90px); 
+         width: 430px; height: 180px; 
+         text-align: center; 
+         letter-spacing: -3px; 
+         font-size: 64px; 
+         font-weight: bold; 
+         color: white; 
+         font-family: "AvenirLTPro-Heavy", 'sdg-b', sans-serif; 
+         text-shadow: 1px 1px 2px rgb(0 0 0 / 40%);
+         z-index: 2;
+         animation-name: socartext;
+         animation-duration: 0.4s;
+         animation-timing-function: ease-in-out;
+         animation-fill-mode: forwards;
+         animation-delay: 0.5s;   
+         opacity: 0;
+      }
+      @keyframes socartext{
+         0%{top: 55%; opacity: 0;}
+         100%{top: 50%; opacity: 1;}
+      }
+      
+      .top_img{
+         position: absolute; left: 0; top: 0;
+         width: 100%; height: 969px; 
+         max-width: 100%; max-height: 100%;
+         background: url("../img/socar-image01.jpg"); 
+         background-size: cover;    
+         background-position: center;
+      }
+
+/*쏘카 헤더*/
+
+
+
+/*쏘카 푸터*/
+@import url('//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css');
+/*.spoka * { font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif'; }*/
+
+*{
+	margin: 0; 
+	padding: 0;
+	font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
+	font-weight: 400;
+}
+ol, ul{
+	list-style: none;
+	color: inherit;
+}
+em{
+	font: inherit;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+table{
+	border-collapse: collapse;
+}
+textarea{
+	resize: none;
+}
+.clear::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+address, i{
+	font-style: normal;
+}
+/*header{
+	position: relative;
+	width: 100%;
+	height: 60px;
+	background: yellow;
+	opacity: 1;
+}*/
+/*
+header nav img{
+	position: absolute;
+	top: 8px;
+	width: 222px;
+	height: 44px;
+}
+header nav svg{
+	position: absolute;
+	top: 16px;
+	right: 0;
+	margin-right: 40px;
+	width: 72px;
+	height: 28px;
+}
+header nav .menu_btn rect{
+	width: 52px;
+	height: 6px;
+	fill: #06b8ff;
+}
+header nav .menu_btn rect:nth-of-type(2){
+	x: 20px;
+	y: 22px;
+}
+*/
+/*header h1{
+	text-align: center;
+	line-height: 60px;
+}*/
+
+main a .down_btn{
+	display: block;
+	position: fixed;
+	right: 0px;
+	bottom: 0px;
+	width: 340px;
+	height: 90px;
+	z-index: 100;
+}
+main a .down_btn p{
+	display: block;
+	position: relative;
+	top: 33.5px;
+	color: white;
+	font-size: 23px;
+	opacity: 0;
+	animation: first 1s 1s normal forwards;
+	z-index: 2;
+}
+
+main a .down_btn img{
+	display: block;
+	position: relative;
+	top: 15px;	
+	float: left;
+	width: 60px;
+	height: 60px;
+	margin-right: 25px;
+	border-radius: 15px;
+	box-shadow: 0px 3px 10px 3px rgba(0, 0, 0, 0.2);
+	opacity: 0;
+	animation: first 1s 1.2s normal forwards;
+	z-index: 2;
+}
+
+main .down_btn p::after{
+	content: "";
+	display: inline-block;
+	margin-left: 10px;	
+	width: 20px;
+	height: 20px;
+	background-image: url("../img/socar-arrow-down.svg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+main a .down_btn .down_btn_bg{
+	position: absolute;
+	display: block;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url("../img/nav_bg.png");
+	background-size: cover;
+	opacity: 0;
+	animation: Second 1s 1.2s normal forwards;
+}
+#footer{
+	position: relative;
+	width: 100%;
+	height: 288px;
+	background: #28323c;
+}
+#footer .contents{
+	width: 980px;
+	margin: 0 auto;
+}
+#footer .contents .sns{
+	float: left;
+}
+#footer .contents .sns ul{
+
+}
+#footer .contents .sns ul li{
+	float: left;
+
+}
+#footer .contents .sns ul li a{
+
+
+}
+#footer .contents .sns ul li a img{
+	margin-top: 35px;
+	margin-right: 10px;
+	margin-bottom: 15px;
+	border-radius: 50%;
+}
+#footer .contents .link{
+	display: inline-block;
+	width: 100%;
+	margin: 0 auto;
+	margin-bottom: 18px;
+    font-size: 16px;
+}
+#footer .contents .link ul{
+}
+#footer .contents .link ul li{
+	margin-right: 21px;
+	float: left;
+	position: static;
+}
+#footer .contents .link ul li a{
+	color: #c5c8c3;
+}
+#footer .contents .left{
+	float: left;
+    font-size: 13px;
+    letter-spacing: -1px;
+}
+#footer .contents .left ul{
+
+}
+#footer .contents .left ul li{
+	margin-bottom: 6px;
+	color: #646f7c;
+}
+#footer .contents .right{
+	float: right;
+    font-size: 13px;
+    letter-spacing: -1px;
+}
+#footer .contents .right li{
+	margin-bottom: 6px;
+	color: #646f7c;
+}
+#footer .contents .right li a{
+    display: inline;
+	text-decoration: underline;
+	color: #c5c8c3;
+}
+#footer .contents .right address{
+	color: #646f7c;
+}
+@keyframes first{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+@keyframes Second{
+	0%{opacity: 0; right:-340px;}
+	100%{opacity: 1;  right:0;}
+}
+/*쏘카 푸터*/

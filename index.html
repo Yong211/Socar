@@ -1,0 +1,332 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>차가 필요한 모든 순간, 쏘카</title>
+    
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="shortcut icon" href="img/socar-icon-socar.png">
+    
+    <style>
+        *{margin: 0; padding: 0;}
+        body{text-rendering: optimizeLegibility;}
+        a{display: block; text-decoration: none; color: black;}
+        img{display: block;}
+        em, i, address{font-style: normal;}
+        li{list-style: none;}
+        
+        
+        main{
+            width: 100%;
+            font-family: "AvenirLTPro-Heavy", 'sdg-m', sans-serif;
+        }
+        main #top_sec{
+            display: block;
+            padding: 0 40px;
+        }
+        
+        main #top_sec section.inner_sec{
+            position: relative;
+            max-width: 800px;
+            margin: 100px auto;
+            overflow: hidden;
+        }
+        
+        main #top_sec section.inner_sec .main_word h2{
+            display: inline-block; position: relative;
+            font-size: 30pt;
+            margin-bottom: 14px;
+        }
+        main #top_sec section.inner_sec .main_word h2::after{
+            content: ""; display: block; position: absolute;
+            right: -16px; bottom: 10px;
+            width: 10px; height: 10px;
+            border-radius: 50%;
+            background: rgba(12,174,232,1.00);
+        }
+        main #top_sec section.inner_sec .main_word p{
+            line-height: 1.5;
+            font-size: 14pt; font-weight: 550;
+            color: #aaa;
+        }
+        main #top_sec section.inner_sec .main_img{overflow: hidden;}
+        main #top_sec section.inner_sec .main_img img{
+            width: 100%;
+            margin: 50px 0;
+        }
+        
+        main #bottom_sec{
+            position: relative;
+            height: 300px;
+            padding: 64px 0 80px 0;
+            background: #F7F8F9;
+            overflow: hidden;
+        }
+        main #bottom_sec section.inner_word{
+            height: 100%;
+        }
+        
+        main #bottom_sec section.inner_word .bottom_wrap{
+            position: relative;
+            z-index: 2;
+            height: 100%;
+        }
+        main #bottom_sec section.inner_word .bottom_wrap .main_bottom{
+            position: absolute;
+            top: 50%;
+            width: 100%; margin-top: -100px;
+            text-align: center;
+            line-height: 1.5;
+            font-size: 28pt; font-weight: 600;
+            color: #aaa;
+        }
+        
+        main #bottom_sec section.inner_word .bottom_wrap .main_bottom span{
+            color: #0BB8FF;
+            font-weight: 600;
+        }
+        main #bottom_sec div.blue_move{
+            position: absolute;
+            left: 70%; bottom: 0;
+            width: 100%; height: 100%;
+            transform: skewX(-30deg);
+            background: rgba(0,184,255,1);
+            transform-origin: bottom right;
+        }
+        
+        .mov{position: relative; opacity: 0;}
+        
+        @keyframes move{
+            0%{opacity: 0; left: 150px;}
+            100%{opacity: 1; left: 0;}
+        }
+        @keyframes momo{
+            0%{opacity: 0; left: 100%;}
+            100%{opacity: 1; left: 70%;}
+        }
+    </style>
+</head>
+
+<body>
+    
+    <!--쏘카 헤더-->
+    <header>
+      <div class="container">
+         <div class="navbar">
+            <a href="#" class="toplogo">
+               <img src="img/socar-logo_white.svg" class="toplogo" alt="쏘카" width="112">
+            </a>
+            <div class="hamburg">
+               <a href="#">
+                  <span></span>
+                  <span></span>
+               </a>
+            </div>
+         </div>
+      </div>
+      
+      <div class="container2">
+         <div class="navbar2">
+            <a href="#" class="toplogo2">
+               <img src="img/socar-logo_blue.svg" class="toplogo2" alt="쏘카" width="112">
+            </a>
+            <div class="hamburg2">
+               <a href="#">
+                  <span></span>
+                  <span></span>
+               </a>
+            </div>
+         </div>
+      </div>
+      
+   </header>
+   <p class="centersocar">차가 필요한<br>모든 순간, 쏘카</p>
+   <div class="top_img"></div>
+   
+   
+   
+   <script>
+      
+      var navbar = document.querySelector('.navbar');
+
+        window.addEventListener('scroll', function() {
+          if (window.scrollY === 0) {
+            navbar.style.display = 'block';
+          } else {
+            navbar.style.display = 'none';
+          }
+        });
+      
+      var navbar2 = document.querySelector('.navbar2');
+
+        // 페이지 로드 후 첫 화면에서 navbar2를 숨김
+        navbar2.style.display = 'none';
+
+        window.addEventListener('scroll', function() {
+          if (window.scrollY === 0) {
+            navbar2.style.display = 'none';
+          } else {
+            navbar2.style.display = 'block';
+          }
+        });
+      
+      
+       var previousScrollPos = window.pageYOffset;
+
+      window.addEventListener('scroll', function() {
+        var currentScrollPos = window.pageYOffset;  
+         var navbar2 = document.querySelector('.navbar2');
+
+
+        if (currentScrollPos > previousScrollPos) {
+         navbar2.style.top = '-60px'; // 네비게이션 숨기기
+        } else {
+         navbar2.style.top = '0'; // 네비게이션 보이기
+        }
+
+        previousScrollPos = currentScrollPos;
+      });
+
+      
+   </script>
+    <!--쏘카 헤더-->
+    
+    <!--쏘카 메인-->
+    <main>
+        <section id="top_sec">
+            <section class="inner_sec mov">
+                <article class="main_word">
+                    <h2>24시간 언제나</h2>
+                    <p>
+                        한밤중이나 주말에도 스마트폰으로<br>
+                        시간에 구애받지 않고<br>
+                        쏘카와 함께 이동하세요.<br>
+                    </p>
+                </article>
+                <div class="main_img">
+                    <img src="img/socar-image02.jpg" alt="쏘카를 이용하는 남성">
+                </div>
+            </section>
+            <section class="inner_sec mov">
+                <article class="main_word">
+                    <h2>원하는 곳에서</h2>
+                    <p>
+                        내 주변 3분 거리 쏘카존에서<br>
+                        혹은 내가 있는 곳으로 쏘카를 불러<br>
+                        어디서나 편하게 출발하세요.<br>
+                    </p>
+                </article>
+                <div class="main_img">
+                    <img src="img/socar-image03.jpg" alt="쏘카를 이용하는 커플">
+                </div>
+            </section>
+            <section class="inner_sec mov">
+                <article class="main_word">
+                    <h2>필요한 시간만큼</h2>
+                    <p>
+                        간단한 장보기부터 주말여행까지<br>
+                        10분 단위로 원하는 만큼만 이용하세요.<br>
+                    </p>
+                </article>
+                <div class="main_img">
+                    <img src="img/socar-image04.jpg" alt="쏘카를 이용하는 커플">
+                </div>
+            </section>
+            <section class="inner_sec mov">
+                <article class="main_word">
+                    <h2>다양한 차종을</h2>
+                    <p>
+                        연인과의 드라이브부터 가족 캠핑까지<br>
+                        상황에 맞게 50여 종의 차량을<br>
+                        선택해서 이용하세요.<br>
+                    </p>
+                </article>
+                <div class="main_img">
+                    <img src="img/socar-image05.jpg" alt="주차되어있는 쏘카">
+                </div>
+            </section>
+        </section>
+        <section id="bottom_sec">
+            <section class="inner_word">
+                <div class="bottom_wrap">
+                    <article class="main_bottom">
+                        <span class="count">8,594,184</span>명의 회원이 쏘카와<br>
+                        함께하고 있습니다.<br>
+                        지금 바로 <span>쏘카 드라이브</span>를<br>
+                        시작하세요.
+                    </article>
+                </div>
+            </section>    
+            <div class="blue_move mov"></div>
+        </section>
+    </main>
+    
+    <script>
+        var mv = document.querySelectorAll('.mov');
+        window.addEventListener('scroll',function (){
+            var value = window.scrollY;
+            console.log('스크롤 위치:', value);
+            
+            if(value > 300){mv[0].style.animation="move 1s ease-out forwards";}
+            if(value > 1200){mv[1].style.animation="move 1s ease-out forwards";}
+            if(value > 2200){mv[2].style.animation="move 1s ease-out forwards";}
+            if(value > 3050){mv[3].style.animation="move 1s ease-out forwards";}
+            if(value > 4000){mv[4].style.animation="momo 1s ease-out forwards";}
+        });
+    </script>
+    <!--쏘카 메인-->
+    
+    <!--쏘카 푸터-->
+    <main>
+		<a href="#">
+			<div class="down_btn">
+				<img src="img/socar-icon.svg" alt="#" width="60" height="60">
+				<p>쏘카 앱 다운로드</p>
+                <div class="down_btn_bg"></div>
+			</div>
+		</a>
+    </main>
+	<footer id="footer">
+		<div class="contents">
+			<div class="sns">
+				<ul>
+					<li><a href="#"><img src="img/socar-icon_instagram.svg" alt="insta" width="30"></a></li>
+					<li><a href="#"><img src="img/socar-icon_facebook.svg" alt="facebook" width="30"></a></li>
+					<li><a href="#"><img src="img/socar-icon_youtube.svg" alt="youtube" width="30"></a></li>
+					<li><a href="#"><img src="img/socar-icon_naver.svg" alt="naver" width="30"></a></li>
+				</ul>
+			</div>
+			<div class="link">
+				<ul>
+					<li><a href="#">회사소개</a></li>
+					<li><a href="#">인재채용</a></li>
+					<li><a href="#">나눔카</a></li>
+					<li><a href="#">이용약관</a></li>
+					<li><a href="#" style="color: white">개인정보처리방침</a></li>
+					<li><a href="#" style="color: white">위치정보 이용약관</a></li>
+					<li><a href="#" style="color: white">차량손해면책제도</a></li>
+					<li><a href="#">고객센터</a></li>
+					<li><a href="#">제휴 문의</a></li>
+				</ul>
+			</div>
+			<address class="left">
+				<ul>
+					<li>주소. 제주특별자치도 제주시 연미길 42 (오라삼동)</li>
+					<li>전화. 1661-3315</li>
+					<li>팩스. 02-6969-9333</li>
+				</ul>
+			</address>
+			<div class="right">
+				<ul>
+					<li>(주)쏘카 통신판매업&nbsp;<a href="#">사업자정보 확인</a></li>
+					<li>신고: 제2019-제주오라-3호, 사업자등록번호: 616-81-90529, 대표자: 박재운</li>
+					<address>
+						© 2019 SOCAR All rights reserved.
+					</address>
+				</ul>
+			</div>
+		</div>
+    </footer>
+    <!--쏘카 푸터-->
+</body>
+</html>
